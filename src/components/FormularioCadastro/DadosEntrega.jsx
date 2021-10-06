@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-
-import { Button, TextField } from "@material-ui/core";
+import { TextField, Button } from "@material-ui/core";
 
 function DadosEntrega({ aoEnviar }) {
   const [cep, setCep] = useState("");
@@ -22,6 +21,7 @@ function DadosEntrega({ aoEnviar }) {
           setCep(e.target.value);
         }}
         id="cep"
+        name="cep"
         label="CEP"
         type="number"
         variant="outlined"
@@ -33,7 +33,8 @@ function DadosEntrega({ aoEnviar }) {
           setEndereco(e.target.value);
         }}
         id="endereco"
-        label="Endereco"
+        name="endereço"
+        label="Enderço"
         type="text"
         variant="outlined"
         margin="normal"
@@ -45,7 +46,8 @@ function DadosEntrega({ aoEnviar }) {
           setNumero(e.target.value);
         }}
         id="numero"
-        label="Número"
+        name="numero"
+        label="Numero"
         type="number"
         variant="outlined"
         margin="normal"
@@ -56,6 +58,7 @@ function DadosEntrega({ aoEnviar }) {
           setEstado(e.target.value);
         }}
         id="estado"
+        name="estado"
         label="Estado"
         type="text"
         variant="outlined"
@@ -67,6 +70,7 @@ function DadosEntrega({ aoEnviar }) {
           setCidade(e.target.value);
         }}
         id="cidade"
+        name="cidade"
         label="Cidade"
         type="text"
         variant="outlined"
